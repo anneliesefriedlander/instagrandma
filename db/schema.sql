@@ -1,0 +1,26 @@
+CREATE TABLE IF NOT EXISTS "user" (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(255),
+    email VARCHAR(255),
+    password TEXT,
+    age INT
+);
+
+CREATE TABLE IF NOT EXISTS post (
+    id SERIAL PRIMARY KEY,
+    caption VARCHAR(255),
+
+);
+
+CREATE TABLE IF NOT EXISTS "like" (
+    id SERIAL PRIMARY KEY
+);
+
+CREATE TABLE IF NOT EXISTS follow (
+    id SERIAL PRIMARY KEY
+);
+
+CREATE TABLE IF NOT EXISTS comment (
+    id SERIAL PRIMARY KEY
+    
+);
